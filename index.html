@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="msg.css">
+</head>
+<body>
+    <div class="container">
+        <section class="head">
+               <h1>Text the message</h1>
+               <hr>
+        </section>
+        <label><b>Enter a message</b></label>
+        <br>
+        <br>
+        <label style="height: 20px;">✉️</label>
+        <input type="text" name="msginp" id="msginp" placeholder="message">
+        <br>
+        <br>
+        <button id="click" onclick="getMessage()">Submit</button>
+        <p id="msgop"></p>
+   
+        <script>
+            const a=document.getElementById('msginp');
+            function getMessage()
+            {
+                document.getElementById('msgop').innerHTML=a.value;
+            }
+        </script>
+    </div>
+   
+</body>
+</html>
